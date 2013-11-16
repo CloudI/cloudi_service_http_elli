@@ -14,6 +14,7 @@
         ]},
    {applications, [
         cloudi_core,
+        cowlib,
         trie,
         uuid,
         stdlib,
