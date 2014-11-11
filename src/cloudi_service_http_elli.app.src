@@ -9,12 +9,9 @@
         cloudi_service_http_elli
         ]},
    {registered, []},
-   {included_applications, [
-        elli
-        ]},
    {applications, [
         cloudi_core,
-        elli_websocket,
+        elli,
         cowlib,
         trie,
         uuid,
