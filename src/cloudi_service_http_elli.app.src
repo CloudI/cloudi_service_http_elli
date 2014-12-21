@@ -3,7 +3,7 @@
 
 {application, cloudi_service_http_elli, 
   [{description, "elli HTTP CloudI Service"},
-   {vsn, "1.4.0-rc.4"},
+   {vsn, "1.4.0"},
    {modules, [
         cloudi_http_elli_handler,
         cloudi_service_http_elli
