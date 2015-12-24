@@ -3,7 +3,7 @@ defmodule CloudIServiceHttpElli do
 
   def project do
     [app: :cloudi_service_db_http_elli,
-     version: "1.5.0",
+     version: "1.5.1",
      language: :erlang,
      description: description,
      package: package,
@@ -11,15 +11,11 @@ defmodule CloudIServiceHttpElli do
   end
 
   defp deps do
-    [{:elli,
-      [git: "https://github.com/knutin/elli.git",
-       tag: "v1.0.1"]},
-     {:cowlib,
-      [git: "https://github.com/ninenines/cowlib.git",
-       tag: "1.0.0"]},
-     {:uuid, "~> 1.5.0", hex: :uuid_erl},
-     {:trie, "~> 1.5.0"},
-     {:cloudi_core, "~> 1.5.0"}]
+    [{:elli, "~> 1.0.4"},
+     {:cowlib, "~> 1.0.1"},
+     {:uuid, "~> 1.5.1", hex: :uuid_erl},
+     {:trie, "~> 1.5.1"},
+     {:cloudi_core, "~> 1.5.1"}]
   end
 
   defp description do
@@ -28,7 +24,7 @@ defmodule CloudIServiceHttpElli do
 
   defp package do
     [files: ~w(src doc rebar.config README.markdown),
-     contributors: ["Michael Truog"],
+     maintainers: ["Michael Truog"],
      licenses: ["BSD"],
      links: %{"Website" => "http://cloudi.org",
               "GitHub" => "https://github.com/CloudI/" <>
