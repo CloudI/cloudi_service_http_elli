@@ -29,8 +29,8 @@ defmodule CloudIServiceHttpElli do
   end
 
   defp deps do
-    [{:elli, "~> 1.0.4"},
-     {:cowlib, "~> 1.0.1"},
+    [{:elli, "~> 3.1.0"},
+     {:cowlib, "~> 1.0.2"},
      {:uuid, "~> 1.7.4", hex: :uuid_erl},
      {:trie, "~> 1.7.4"},
      {:cloudi_core, "~> 1.7.4"}]
