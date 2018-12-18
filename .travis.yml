@@ -4,10 +4,10 @@ otp_release:
   - 20.3
   - 19.3
 before_script:
-  - rebar get-deps
-script: rebar compile
+  - rebar3 get-deps
+script: rebar3 compile
 after_script:
-  - rebar clean
+  - rebar3 clean
 branches:
   only:
     - master
