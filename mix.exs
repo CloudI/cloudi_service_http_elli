@@ -6,7 +6,7 @@ defmodule CloudIServiceHttpElli do
 
   def project do
     [app: :cloudi_service_http_elli,
-     version: "1.8.0",
+     version: "2.0.0",
      language: :erlang,
      erlc_options: [
        :debug_info,
@@ -31,9 +31,9 @@ defmodule CloudIServiceHttpElli do
   defp deps do
     [{:elli, "~> 3.1.0"},
      {:cowlib, "~> 1.0.2"},
-     {:uuid, "~> 1.8.0", hex: :uuid_erl},
-     {:trie, "~> 1.8.0"},
-     {:cloudi_core, "~> 1.8.0"}]
+     {:uuid, "~> 2.0.0", hex: :uuid_erl},
+     {:trie, "~> 2.0.0"},
+     {:cloudi_core, "~> 2.0.0"}]
   end
 
   defp description do
