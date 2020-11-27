@@ -6,7 +6,7 @@ defmodule CloudIServiceHttpElli do
 
   def project do
     [app: :cloudi_service_http_elli,
-     version: "2.0.0",
+     version: "2.0.1",
      language: :erlang,
      erlc_options: [
        :debug_info,
@@ -29,11 +29,11 @@ defmodule CloudIServiceHttpElli do
   end
 
   defp deps do
-    [{:elli, "~> 3.1.0"},
+    [{:elli, "~> 3.3.0"},
      {:cowlib, "~> 1.0.2"},
-     {:uuid, "~> 2.0.0", hex: :uuid_erl},
-     {:trie, "~> 2.0.0"},
-     {:cloudi_core, "~> 2.0.0"}]
+     {:uuid, "~> 2.0.1", hex: :uuid_erl},
+     {:trie, "~> 2.0.1"},
+     {:cloudi_core, "~> 2.0.1"}]
   end
 
   defp description do
@@ -41,7 +41,7 @@ defmodule CloudIServiceHttpElli do
   end
 
   defp package do
-    [files: ~w(src doc rebar.config README.markdown),
+    [files: ~w(src doc rebar.config README.markdown LICENSE),
      maintainers: ["Michael Truog"],
      licenses: ["MIT"],
      links: %{"Website" => "https://cloudi.org",
