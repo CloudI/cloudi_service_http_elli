@@ -1,15 +1,15 @@
 language: erlang
 otp_release:
-  - 23.0.4
+  - 23.3.1
   - 22.3.4
   - 21.3.8.1
-  - 20.3.8.5
+  - 20.3.8.22
   - 19.3
 before_script:
-  - rebar3 get-deps
-script: rebar3 compile || echo "cowlib1 is not actively maintained"
+  - rebar get-deps
+script: rebar compile
 after_script:
-  - rebar3 clean
+  - rebar clean
 branches:
   only:
     - master
@@ -19,7 +19,7 @@ notifications:
       - mjtruog@gmail.com
   irc:
     channels:
-      - "chat.freenode.net#cloudi"
+      - "irc.oftc.net#cloudi"
     template:
       - "%{repository_slug} (%{branch} - %{commit}) %{author}: %{commit_message}"
       - "View Changes %{compare_url}"
